@@ -1,0 +1,9 @@
+<% content_for(:title, "Password Checker") %>
+
+<h1>Password Checker</h1>
+
+<form>
+  <input type="text" name="user" placeholder="Pick a username" /><%= flash[:alert] %><br />
+  <input type="text" name="pass" placeholder="Pick a password" /><%= flash[:stupidface] %><br />
+  <input type="submit" value="Submit" />
+</form>

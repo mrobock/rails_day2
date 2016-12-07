@@ -1,0 +1,15 @@
+<% content_for(:title, "Hi Lo Game") %>
+
+<h1>Guess a Number</h1>
+
+<%= flash[:alert] %>
+<%= flash[:notice] %>
+<%= flash[:poop] %>
+
+
+<form>
+  <input type="number" name="try" min="1" max="100" />
+  <input type="submit" value="Submit Here" />
+</form>
+
+<p>Your result was: <%= @result %>. Our secret # is <%= @secretnum %></p>
